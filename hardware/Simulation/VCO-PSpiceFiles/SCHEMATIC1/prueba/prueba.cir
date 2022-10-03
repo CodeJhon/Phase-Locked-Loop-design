@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-prueba"  [ D:\OneDrive\Universidad\Diseño\VCO\vco-pspicefiles\schematic1\prueba.sim ] 
+
+** Creating circuit file "prueba.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Orcad\Cadence\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "D:\Orcad\Cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\Latch.olb" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 30m 0 1m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
